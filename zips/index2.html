@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encontros Universitários</title>
+  </head>
+  <body>
+    <h1>Encontros Universitários</h1>
+    <form action="/destino.html">
+      <label for="title"> Título do Trabalho: </label>
+      <input
+        type="text"
+        name="title"
+        id="title"
+        maxlength="100"
+        required
+      /><br /><br />
+
+      <label for="resumo"> Resumo do Trabalho: </label><br />
+      <textarea
+        name="resumo"
+        id="resumo"
+        maxlength="500"
+        required
+        rows="10"
+        cols="25"
+      ></textarea
+      ><br /><br />
+
+      <label for=""> Tilha de Submissão: </label><br />
+      <input type="checkbox" name="pesquisa" id="T1" value="pesquisa" />
+      <label for="T1"> Pesquisa Cientifica </label><br />
+      <input type="checkbox" name="inovacao" id="T2" value="inovacao" />
+      <label for="T2"> Inovação e Tecnologia </label><br />
+      <input type="checkbox" name="extensao" id="T3" value="extensao" />
+      <label for="T3"> Extensão Universitária </label><br />
+      <input
+        type="checkbox"
+        name="empreendedorismo"
+        id="T4"
+        value="empreendedorismo"
+      />
+      <label for="T4"> Empreendedorismo </label><br />
+      <input type="checkbox" name="arte" id="T5" value="arte" />
+      <label for="T5"> Arte e Cultura </label><br /><br /><br />
+
+      <label for="autores"> Autores: </label>
+      <input
+        type="text"
+        name="ftitle"
+        id="ftitle"
+        maxlength="200"
+        required
+      /><br /><br />
+
+      <label for="orientador"> Orientador: </label>
+      <select name="Orientador" id="ex">
+        <option value="">Paulo</option>
+        <option value="">Henrique</option>
+        <option value="">Silva</option>
+        <option value="">Sousa</option></select
+      ><br /><br />
+
+      <label for="links"> Link para Anexos: </label>
+      <input type="url" name="links" id="links" /><br /><br /><br />
+
+      <label for=""> Comentários Adicionais: </label><br />
+      <textarea
+        name="resumo"
+        id="resumo"
+        maxlength="300"
+        rows="10"
+        cols="25"
+      ></textarea
+      ><br /><br />
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Clear" />
+    </form>
+  </body>
+</html>

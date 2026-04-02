@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Torneio de ciclismo</title>
+  </head>
+  <body>
+    <h1>Torneio de ciclismo</h1>
+    <form action="/destino.html">
+      <label for="fname"> Nome Completo: </label>
+      <input type="text" name="fname" id="fname" /><br /><br />
+
+      <label value="fdate"> Data de Nascimento </label><br />
+      <input type="date" name="fdate" id="fdate" /><br /><br />
+
+      <label for="fmod"> Modalidade: </label>
+      <select name="Modalidade" id="mod">
+        <option value="">Mountain Bike</option>
+        <option value="">Ciclismo de Estrada</option></select
+      ><br /><br />
+
+      <label for="fex"> Nivel de Experiencia: </label>
+      <select name="Nivel de Experiencia" id="ex">
+        <option value="">Iniciante</option>
+        <option value="">Intermediário</option>
+        <option value="">Avançado</option></select
+      ><br /><br />
+
+      <label for=""> Alimentação necessária: </label><br />
+      <input type="checkbox" name="água" id="Al1" value="Água" />
+      <label for="Al1"> Água </label><br />
+      <input
+        type="checkbox"
+        name="lanche_rapido"
+        id="Al2"
+        value="lanche_rapido"
+      />
+      <label for="Al2"> Lanche Rápido </label><br />
+      <input
+        type="checkbox"
+        name="lanche_reforcado"
+        id="Al3"
+        value="lanche_reforcado"
+      />
+      <label for="Al3"> Lanche Reforçado </label><br />
+      <input type="checkbox" name="refri" id="Al4" value="refri" />
+      <label for="Al4"> Coca-cola Sem Açúcar </label><br />
+      <input type="checkbox" name="barra" id="Al5" value="barra" />
+      <label for="Al5"> Barra Proteica </label><br /><br /><br />
+
+      <input type="checkbox" name="aceite" id="aceite" required />
+      <label for="aceite">
+        Li e aceito os termos e condições da organização do torneio </label
+      ><br /><br />
+
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>

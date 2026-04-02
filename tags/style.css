@@ -1,0 +1,16 @@
+mark {
+  background-color: darkgreen;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+body {
+  background-color: black;
+  color: rgb(19, 93, 19);
+  font-family: "IBM Plex Mono", monospace;
+  text-align: center;
+}
+
+input {
+    border-radius: 15px;
+}

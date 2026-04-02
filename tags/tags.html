@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tags</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Você está no meu site</h1>
+    </header>
+
+    <main>
+      <article>
+        <h2>Tags semânticas</h2>
+        <p>tags semânticas são importantíssimas</p>
+      </article>
+
+      <section>
+        <h3>Este é um exemplo de section</h3>
+        <p>agora ta certo esse exemplo</p>
+      </section>
+
+      <figure>
+        <img
+          src="https://imgs.search.brave.com/ELeFrKXJo-a5qvZkm4d4d70qCT_g8DdapPJ8XaQQvY4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNy8w/NC8xOC8yMy8zNS9m/cm9nLTIyNDA3NjRf/XzM0MC5qcGc"
+          alt="sapin engraçado"
+          width="300"
+          height="200"
+        />
+        <figcaption><mark> Esse é o sapin engraçado </mark></figcaption>
+      </figure>
+
+      <label for="file-Download"> Progresso do sapin: </label>
+      <progress id="file-Download" value="90" max="100"></progress>
+
+      <form onkeydown="result.value = parseInt(a.value) + parseInt(b.value)">
+        <label for="a">Quanto você gosta do sapin:</label>
+        <input type="number" id="a" name="a" value="0" />
+
+        <label for="b">Quanto acha que ele gosta de você:</label>
+        <input type="number" id="b" name="b" value="0" />
+
+        <p>
+          quanto vocês se gostam: <output name="result" for="a b">0</output>
+        </p>
+      </form>
+
+      <details>
+        <summary>Estes foram os exemplos de uso de tags semânticas</summary>
+        <p>E varias coisas do sapin.</p>
+      </details>
+    </main>
+
+    <aside>
+      <nav>
+        <a
+          href="https://imgs.search.brave.com/ELeFrKXJo-a5qvZkm4d4d70qCT_g8DdapPJ8XaQQvY4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNy8w/NC8xOC8yMy8zNS9m/cm9nLTIyNDA3NjRf/XzM0MC5qcGc"
+        >
+          Link para a foto do sapin engraçado
+        </a>
+      </nav>
+    </aside>
+
+    <footer>
+      <p>&copy; Ph</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Sistema de Agendamento</h1>
+
+    <form action="/enviar/" method="get">
+      <search>
+        <input
+          type="search"
+          id="query"
+          name="q"
+          placeholder="Pesquisar..."
+          list="lista"
+        />
+        <button type="submit">Ir</button>
+
+        <datalist id="lista">
+          <option value="Consultoria"></option>
+          <option value="Audit"></option>
+        </datalist>
+      </search>
+
+      <br /><br />
+
+      <h2>Informações Pessoais</h2>
+
+      <label for="email"> Email: </label>
+      <input type="email" id="email" required placeholder="Email@gmail.com" />
+      <br /><br />
+
+      <label for="telefone"> Tefelone: </label>
+      <input type="tel" id="telefone" required placeholder="(00) 0 0000-0000" />
+      <br /><br />
+
+      <label for="perfil"> Seu perfil pessoal: </label>
+      <input type="url" name="perfil" id="perfil" required />
+      <br /><br />
+
+      <h2>Sobre o projeto</h2>
+
+      <label for="horas"> Horas de Consultoria: </label>
+      <input type="number" id="horas" required />
+      <br /><br />
+
+      <label for="range"> Nível de urgência: </label>
+      <input type="range" name="range" id="range" min="0" max="10" required />
+      <br /><br />
+
+      <label for="cor"> Cor da sua identidade: </label>
+      <input type="color" name="cor" id="cor" required />
+      <br /><br />
+
+      <label for="dia"> Primeira reunião: </label>
+      <input type="date" id="dia" required />
+      <br /><br />
+
+      <label for="hora"> Horário: </label>
+      <input type="time" id="hora" required />
+      <br /><br />
+
+      <label for="mes"> Mês do faturamento: </label>
+      <input type="date" id="mes" required />
+      <br /><br />
+
+      <label for="semana"> Semana de inicio: </label>
+      <input type="week" id="semana" required />
+      <br /><br />
+
+      <label for="check"> Check-in de Emergência: </label>
+      <input type="datetime-local" id="check" required />
+      <br /><br />
+
+      <label for="check"> Check-in de Emergência: </label>
+      <input type="datetime-local" id="check" required />
+      <br /><br />
+
+      <label for="ocupacao"> Nível de Ocupação atual do consultor </label><br />
+      <meter value="80" min="0" max="100">80%</meter>
+      <br /><br />
+
+      <label for="iframe"> Escritorio: </label><br />
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.761671403746!2d-39.05914572610218!3d-4.979226750811766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be9e1bee212d41%3A0x705b4707028de537!2sUFC%20-%20Universidade%20Federal%20do%20Cear%C3%A1%20-%20Campus%20Quixad%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1775010846013!5m2!1spt-BR!2sbr"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        frameborder="0"
+        id="iframe"
+      ></iframe>
+
+      <br /><br /><br /><br />
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
