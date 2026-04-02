@@ -47,5 +47,5 @@ div{
   background-color: #1f1e1e;
   text-align: center;
   padding: 10px;
-  transition: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
