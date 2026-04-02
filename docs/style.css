@@ -40,8 +40,8 @@ footer {
 div{
   display: None;
   position: fixed;
-  top: 40%;
-  left: 38%;
+  top: 50%;
+  left: 50%;
   height: 200px;
   width: 300px;
   background-color: #1f1e1e;
