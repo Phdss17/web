@@ -54,25 +54,26 @@ function verify() {
         }
     }
 
-    let win = true;
+    let win = 0;
 
     for(let i = 1; i <= 5; i++){
         let elem = document.getElementById(i.toString());
-        if(word.includes(elem.value)){
-            if(word[i-1] == elem.value){
+        let input = elem.value.toLowerCase();
+        let inputR = word[i-1].toLowerCase(); 
+
+        if(word.includes(input)){
+            if(inputR == input){
                 elem.style.backgroundColor = 'Green';
-                win = true;
+                win++;
             }else{
                 elem.style.backgroundColor = 'Yellow';
-                win = false;
             }
         }else{
             elem.style.backgroundColor = 'Red';
-            win = false
         }
     }
 
-    if(win == true){
+    if(win == 5){
         showWin();
     }
 }
