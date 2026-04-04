@@ -9,47 +9,55 @@
   <body>
     <h1>Termo-Wordle</h1>
 
-    <input
-      type="text"
-      id="1"
-      name="L"
-      autofocus
-      maxlength="1"
-      onkeydown="nxL(event, this)"
-    />
-    <input
-      type="text"
-      id="2"
-      name="L"
-      maxlength="1"
-      onkeydown="nxL(event, this)"
-    />
-    <input
-      type="text"
-      id="3"
-      name="L"
-      maxlength="1"
-      onkeydown="nxL(event, this)"
-    />
-    <input
-      type="text"
-      id="4"
-      name="L"
-      maxlength="1"
-      onkeydown="nxL(event, this)"
-    />
-    <input
-      type="text"
-      id="5"
-      name="L"
-      maxlength="1"
-      onkeydown="nxL(event, this)"
-    />
+    <div id="gameArea">
+      <input
+        type="text"
+        id="11"
+        name="L"
+        autofocus
+        maxlength="1"
+        onkeydown="nxL(event, this)"
+      />
+      <input
+        type="text"
+        id="12"
+        name="L"
+        maxlength="1"
+        onkeydown="nxL(event, this)"
+      />
+      <input
+        type="text"
+        id="13"
+        name="L"
+        maxlength="1"
+        onkeydown="nxL(event, this)"
+      />
+      <input
+        type="text"
+        id="14"
+        name="L"
+        maxlength="1"
+        onkeydown="nxL(event, this)"
+      />
+      <input
+        type="text"
+        id="15"
+        name="L"
+        maxlength="1"
+        onkeydown="nxL(event, this)"
+      />
+    </div>
 
-    <div id="win">
+    <div id="win" name="winlose">
       🩸 PARABÉNS! 🩸 <br />
+      <img src="img/win.jpg" alt="image" width="150" height="150" /> <br />
       VOCÊ VENCEU!
-      <img src="imagem.jpg" alt="image" width="150" height="150" />
+    </div>
+
+    <div id="lose" name="winlose">
+      🩸 Você perdeu ! 🩸 <br />
+      <img src="img/lose.jpg" alt="image" width="150" height="150" /> <br />
+      Babaca!
     </div>
 
     <br /><br />
