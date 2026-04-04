@@ -58,6 +58,7 @@ function verify() {
 
     for(let i = 1; i <= 5; i++){
         let elem = document.getElementById(i.toString());
+        elem.ariaReadOnly = true
         let input = elem.value.toLowerCase();
         let inputR = word[i-1].toLowerCase(); 
 
