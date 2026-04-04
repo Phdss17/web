@@ -1,0 +1,20 @@
+[
+  {
+    "usuarios": [
+      "João",
+      "Maria"
+    ],
+    "configuracoes": {
+      "tema": "escuro"
+    }
+  },
+  {
+    "usuarios": [
+      "Paulo",
+      "vitoria"
+    ],
+    "configuracoes": {
+      "tema": "escuro"
+    }
+  }
+]
