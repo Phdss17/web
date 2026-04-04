@@ -54,7 +54,7 @@ function verify() {
         }
     }
 
-    let win = 5;
+    let win = 0;
 
     for(let i = 1; i <= 5; i++){
         let elem = document.getElementById(i.toString());
@@ -64,13 +64,12 @@ function verify() {
         if(word.includes(input)){
             if(inputR == input){
                 elem.style.backgroundColor = 'Green';
+                win++;
             }else{
                 elem.style.backgroundColor = 'Yellow';
-                win--;
             }
         }else{
             elem.style.backgroundColor = 'Red';
-            win--;
         }
     }
 
