@@ -26,3 +26,5 @@ fs.writeFileSync("dados.json", JSON.stringify(Jsonatual, null, 2));
 
 // Ler de arquivo
 const dadosLidos = JSON.parse(fs.readFileSync("dados.json", "utf8"));
+
+console.log(dadosLidos)

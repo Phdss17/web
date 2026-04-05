@@ -18,9 +18,9 @@ h1 {
 
 [id="gameArea"]{
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 10px;
-  width: 240px;
+  width: 280px;
   margin: 0 auto;
 }
 
@@ -39,7 +39,7 @@ h1 {
 input[type="button"]{
   position: absolute;
   left: 50%;
-  bottom: 20%;
+  bottom: 15%;
   transform: translateX(-50%);
 
   padding: 10px 30px;

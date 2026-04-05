@@ -6,8 +6,8 @@
     <title>Termo foda</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <h1>Termo-Wordle</h1>
+  <body onload="init()">
+    <h1> Sixtina </h1>
 
     <div id="gameArea">
       <input
@@ -46,6 +46,13 @@
         maxlength="1"
         onkeydown="nxL(event, this)"
       />
+      <input
+        type="text"
+        id="16"
+        name="L"
+        maxlength="1"
+        onkeydown="nxL(event, this)"
+      />
     </div>
 
     <div id="win" name="winlose">
@@ -57,7 +64,6 @@
     <div id="lose" name="winlose">
       🩸 Você perdeu ! 🩸 <br />
       <img src="img/lose.jpg" alt="image" width="150" height="150" /> <br />
-      Babaca!
     </div>
 
     <br /><br />

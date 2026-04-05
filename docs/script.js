@@ -1,19 +1,23 @@
 let minT = 1;
-const maxT = 6;
+const maxT = 7;
 
-const word = "jason";
-let lastId = 15;
+let word = "";
+let lastId = 16;
+
+async function init() {
+  word = await wordsJ();
+}
 
 function nxL(event, element) {
   if (element.readOnly) {
     event.preventDefault();
     return;
   }
-
+  
   let key = event.key;
   let id = parseInt(element.id[1]);
   let newId;
-
+  
   if (key === "Backspace") {
     if (element.value == "") {
       newId = id - 1;
@@ -35,7 +39,7 @@ function nxL(event, element) {
     document.getElementById(tId).focus();
     event.preventDefault();
   } else if (key === "ArrowRight") {
-    newId = (id % 5) + 1;
+    newId = (id % 6) + 1;
     let tId = minT.toString() + newId.toString();
     document.getElementById(tId).focus();
     event.preventDefault();
@@ -43,13 +47,13 @@ function nxL(event, element) {
     verify();
     event.preventDefault();
   } else if (key == " ") {
-    newId = (id % 5) + 1;
+    newId = (id % 6) + 1;
     let tId = minT.toString() + newId.toString();
     document.getElementById(tId).focus();
     event.preventDefault();
   } else if (/[A-Za-z]/.test(key) && key.length === 1) {
     element.value = key;
-    newId = (id % 5) + 1;
+    newId = (id % 6) + 1;
     let tId = minT.toString() + newId.toString();
     document.getElementById(tId).focus();
     event.preventDefault();
@@ -58,19 +62,18 @@ function nxL(event, element) {
   }
 }
 
-//verifica os acertos
-function verify() {
-  for (let i = 1; i <= 5; i++) {
+async function verify() {
+  for (let i = 1; i <= 6; i++) {
     let tId = minT.toString() + i.toString();
     let elem = document.getElementById(tId);
     if (elem.value == "") {
       return;
     }
   }
-
+  
   let win = 0;
-
-  for (let i = 1; i <= 5; i++) {
+  
+  for (let i = 1; i <= 6; i++) {
     let tId = minT.toString() + i.toString();
     let elem = document.getElementById(tId);
     elem.readOnly = true;
@@ -90,7 +93,7 @@ function verify() {
     }
   }
 
-  if (win == 5) {
+  if (win == 6) {
     showWin();
   } else if(minT < maxT){
     minT++;
@@ -102,7 +105,7 @@ function verify() {
 
 function newRow() {
   let parent = document.getElementById("gameArea");
-  for(let i = 1; i <= 5; i++){
+  for(let i = 1; i <= 6; i++){
     let child = document.createElement("input");
     let tId = minT.toString() + i.toString();
     addAtributes(child, tId);
@@ -122,9 +125,22 @@ function addAtributes(child, i) {
 }
 
 function showLose() {
-  document.getElementById("lose").style.display = "block";
+  let elem = document.getElementById("lose");
+  elem.innerHTML += "A palavra é " + word;
+  elem.style.display = "block";
 }
 
 function showWin() {
   document.getElementById("win").style.display = "block";
+}
+
+async function wordsJ() {
+  try {
+    const response = await fetch('words.json');
+    const words = await response.json();
+    const indice = Math.floor(Math.random() * words.palavras.length);
+    return words.palavras[indice];
+  } catch (error) {
+    console.error('Erro ao carregar JSON:', error);
+  }
 }

@@ -16,5 +16,23 @@
     "configuracoes": {
       "tema": "escuro"
     }
+  },
+  {
+    "usuarios": [
+      "Paulo",
+      "vitoria"
+    ],
+    "configuracoes": {
+      "tema": "escuro"
+    }
+  },
+  {
+    "usuarios": [
+      "Paulo",
+      "vitoria"
+    ],
+    "configuracoes": {
+      "tema": "escuro"
+    }
   }
 ]
